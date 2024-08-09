@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="866.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f3f3f3" height="806.0" layoutX="2.0" layoutY="54.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-arc-height: 55; -fx-arc-width: 55;" width="300.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8a00" height="80.0" stroke="BLACK" strokeType="INSIDE" width="1300.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="14.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 45; -fx-arc-width: 40;" width="237.0" />
+      <Circle fill="#532555" layoutX="1025.0" layoutY="39.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fill="#fffafa" layoutX="1009.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1071.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Onkar (Admin)">
+         <font>
+            <Font name="Arial" size="28.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="777.0" layoutX="308.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-arc-height: 45; -fx-arc-width: 50;" width="989.0" />
+      <Button alignment="TOP_LEFT" layoutX="4.0" layoutY="103.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="291.0" style="-fx-background-radius: 15; -fx-font-style: sans-serif; -fx-background-color: #f8f8f8;" text="Dashboard">
+         <font>
+            <Font name="SansSerif Regular" size="20.0" />
+         </font>
+      </Button>
+      <Button alignment="TOP_LEFT" layoutX="4.0" layoutY="163.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="291.0" style="-fx-background-radius: 15; -fx-font-style: sans-serif; -fx-background-color: #f8f8f8;" text="Patients">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button alignment="TOP_LEFT" layoutX="4.0" layoutY="228.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="291.0" style="-fx-background-radius: 15; -fx-font-style: sans-serif; -fx-background-color: #ff8a00;" text="Cases">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button alignment="TOP_LEFT" layoutX="6.0" layoutY="288.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="291.0" style="-fx-background-radius: 15; -fx-font-style: sans-serif; -fx-background-color: #f8f8f8;" text="Appoinments">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button alignment="TOP_LEFT" layoutX="6.0" layoutY="346.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="291.0" style="-fx-background-radius: 15; -fx-font-style: sans-serif; -fx-background-color: #f8f8f8;" text="Users">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button alignment="TOP_LEFT" layoutX="6.0" layoutY="791.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="291.0" style="-fx-background-radius: 15; -fx-font-style: sans-serif; -fx-background-color: #f8f8f8;" text="Logout">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="325.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Case">
+         <font>
+            <Font name="Arial" size="28.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="99.0" fitWidth="75.0" layoutX="14.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logos.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="300.0" fitWidth="200.0" layoutX="61.0" layoutY="-55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logonames.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="354.0" layoutY="118.0" prefHeight="31.0" prefWidth="218.0" text="Patient Name (English)">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="590.0" layoutY="108.0" prefHeight="50.0" prefWidth="568.0" style="-fx-background-radius: 15; -fx-border-color: black; -fx-border-radius: 15;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="354.0" layoutY="192.0" prefHeight="31.0" prefWidth="218.0" text="Patient ID">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="590.0" layoutY="183.0" prefHeight="50.0" prefWidth="568.0" style="-fx-background-radius: 15; -fx-border-color: black; -fx-border-radius: 15;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="354.0" layoutY="273.0" prefHeight="31.0" prefWidth="218.0" text="Case Number">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="590.0" layoutY="263.0" prefHeight="50.0" prefWidth="568.0" style="-fx-background-radius: 15; -fx-border-color: black; -fx-border-radius: 15;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="354.0" layoutY="359.0" prefHeight="31.0" prefWidth="218.0" text="Examination Date">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="590.0" layoutY="350.0" prefHeight="50.0" prefWidth="568.0" style="-fx-background-radius: 15; -fx-border-color: black; -fx-border-radius: 15;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="354.0" layoutY="472.0" prefHeight="31.0" prefWidth="218.0" text="Symptoms">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="593.0" layoutY="438.0" prefHeight="100.0" prefWidth="568.0" style="-fx-background-radius: 15; -fx-border-color: black; -fx-border-radius: 15;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="354.0" layoutY="618.0" prefHeight="31.0" prefWidth="218.0" text="Prescription">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="593.0" layoutY="597.0" prefHeight="75.0" prefWidth="568.0" style="-fx-background-radius: 15; -fx-border-color: black; -fx-border-radius: 15;" />
+      <Button layoutX="621.0" layoutY="735.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="182.0" style="-fx-background-radius: 15; -fx-border-color: red; -fx-border-radius: 15; -fx-background-color: white;" text="Cancle" textFill="#f50000">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="904.0" layoutY="735.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="182.0" style="-fx-background-radius: 15; -fx-border-color: red; -fx-border-radius: 15; -fx-background-color: #6aa84f;" text="Save" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
