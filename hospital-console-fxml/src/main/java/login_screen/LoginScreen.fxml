@@ -61,21 +61,26 @@
             <Font name="System Bold" size="34.0" />
          </font>
       </Label>
-      <TextField layoutX="199.0" layoutY="441.0" prefHeight="46.0" prefWidth="380.0" promptText="Mobile Number" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+      <TextField fx:id="uName" layoutX="199.0" layoutY="441.0" prefHeight="46.0" prefWidth="380.0" promptText="Mobile Number" style="-fx-border-radius: 15; -fx-background-radius: 15;">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <TextField layoutX="199.0" layoutY="516.0" prefHeight="46.0" prefWidth="380.0" promptText="Passcode" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+      <TextField fx:id="password" layoutX="199.0" layoutY="516.0" prefHeight="46.0" prefWidth="380.0" promptText="Passcode" style="-fx-border-radius: 15; -fx-background-radius: 15;">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
       <Line endX="200.0" layoutX="378.0" layoutY="590.0" startX="-170.0" />
-      <Button layoutX="203.0" layoutY="623.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="371.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-background-color: #ff8a00;" text="Next">
+      <Button layoutX="203.0" layoutY="623.0" mnemonicParsing="false" onAction="#loginButtonClicked" prefHeight="48.0" prefWidth="371.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-background-color: #ff8a00;" text="Next">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
+      <Label fx:id="responseMsg" alignment="CENTER" layoutX="232.0" layoutY="773.0" prefHeight="21.0" prefWidth="243.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

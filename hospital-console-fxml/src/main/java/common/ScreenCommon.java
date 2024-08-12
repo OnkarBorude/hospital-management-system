@@ -21,15 +21,13 @@ public class ScreenCommon {
 			URL fxmlurl=Paths.get(actualPath).toUri().toURL();
 			try {
 				Parent actorGroup=FXMLLoader.load(fxmlurl);
-				Scene scene=new Scene(actorGroup, 1300, 800);
+				Scene scene=new Scene(actorGroup, 1235, 800);
 				StageHolder.stage.setScene(scene);
 				StageHolder.stage.show();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

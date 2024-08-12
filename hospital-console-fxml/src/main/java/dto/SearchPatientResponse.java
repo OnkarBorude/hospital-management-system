@@ -11,6 +11,21 @@ public class SearchPatientResponse {
 	private String birthDate;
 	private String firstExaminationDate;
 	private String address;
+	private String responseCode;
+	private String messege;
+	
+	public String getResponseCode() {
+		return responseCode;
+	}
+	public void setResponseCode(String responseCode) {
+		this.responseCode = responseCode;
+	}
+	public String getMessege() {
+		return messege;
+	}
+	public void setMessege(String messege) {
+		this.messege = messege;
+	}
 	public String getPatientId() {
 		return patientId;
 	}
