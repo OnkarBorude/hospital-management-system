@@ -7,6 +7,21 @@ public class SearchAppointmentResponse {
 	private String appointmentId;
 	private String examinationDate;
 	private String appointmentTime;
+	private String responseCode;
+	private String messege;
+	
+	public String getResponseCode() {
+		return responseCode;
+	}
+	public void setResponseCode(String responseCode) {
+		this.responseCode = responseCode;
+	}
+	public String getMessege() {
+		return messege;
+	}
+	public void setMessege(String messege) {
+		this.messege = messege;
+	}
 	public String getPatientNameEng() {
 		return patientNameEng;
 	}

@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import appointment_management.AppointmentManagement;
 import case_management.CaseManagement;
+import common.EndPoints;
 import common.RestUtil;
 import dashboard_page.Dashboard;
 import dto.SearchPatientResponse;
@@ -70,7 +71,7 @@ public class SearchPatientController {
 	}
 	
 	public void searchButtonClicked() throws IOException, InterruptedException {
-		String url="http://localhost:8082/patient/search/"+pId.getText();
+		String url=EndPoints.SEARCH_PATIENT+pId.getText();
 		SearchPatientResponse searchPatientResponse=RestUtil.getRequest(url, SearchPatientResponse.class);
 		if(searchPatientResponse.getResponseCode().equals("0000")) {
 			pNameEng.setText(searchPatientResponse.getPatientNameEng());

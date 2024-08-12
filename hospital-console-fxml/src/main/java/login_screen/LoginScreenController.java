@@ -2,6 +2,7 @@ package login_screen;
 
 import java.io.IOException;
 
+import common.EndPoints;
 import common.RestUtil;
 import dashboard_page.Dashboard;
 import dto.LoginRequest;
@@ -27,7 +28,7 @@ public class LoginScreenController {
 		LoginRequest loginRequest=new LoginRequest();
 		loginRequest.setUser(uName.getText());
 		loginRequest.setPassword(password.getText());
-		String url="http://localhost:8081/directory/login";
+		String url=EndPoints.LOGIN;
 		
 		LoginResponse loginResponse=RestUtil.postRequest(url, loginRequest, LoginResponse.class);
 		

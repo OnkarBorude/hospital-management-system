@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="836.0" prefWidth="1241.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login_screen.LoginScreenController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="842.0" layoutX="712.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="529.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#f59312" />
+                  <Stop color="#fec880" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="842.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="715.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#8a8a8a" />
+                  <Stop color="#414141" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="350.0" fitWidth="450.0" layoutX="743.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LoginPageImage.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="733.0" layoutY="475.0" prefHeight="27.0" prefWidth="493.0" text="The body when combined with sense organs, mine and soul,">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="733.0" layoutY="502.0" prefHeight="21.0" prefWidth="102.0" text="becomes life">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="117.0" layoutX="247.0" layoutY="184.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="261.0" />
+      <ImageView fitHeight="96.0" fitWidth="105.0" layoutX="330.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logos.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="271.0" fitWidth="278.0" layoutX="243.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logonames.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="302.0" layoutY="367.0" prefHeight="39.0" prefWidth="152.0" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <TextField fx:id="uName" layoutX="199.0" layoutY="441.0" prefHeight="46.0" prefWidth="380.0" promptText="Mobile Number" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="password" layoutX="199.0" layoutY="516.0" prefHeight="46.0" prefWidth="380.0" promptText="Passcode" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Line endX="200.0" layoutX="378.0" layoutY="590.0" startX="-170.0" />
+      <Button layoutX="203.0" layoutY="623.0" mnemonicParsing="false" onAction="#loginButtonClicked" prefHeight="48.0" prefWidth="371.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-background-color: #ff8a00;" text="Next">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="responseMsg" alignment="CENTER" layoutX="232.0" layoutY="773.0" prefHeight="21.0" prefWidth="243.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

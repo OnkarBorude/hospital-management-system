@@ -6,6 +6,7 @@ import com.sun.prism.paint.Color;
 
 import appointment_management.AppointmentManagement;
 import case_management.CaseManagement;
+import common.EndPoints;
 import common.RestUtil;
 import dashboard_page.Dashboard;
 import dto.AddUserRequest;
@@ -67,7 +68,7 @@ public class AddUserController {
 	public void saveButtonClicked() throws IOException, InterruptedException {
 		
 		AddUserRequest addUserRequest=new AddUserRequest();
-		String url="http://localhost:8081/directory/add";
+		String url=EndPoints.ADD_DIRECTORY;
 		
 		addUserRequest.setUserName(uNameEng.getText());
 		addUserRequest.setMobileNumber(mNum.getText());

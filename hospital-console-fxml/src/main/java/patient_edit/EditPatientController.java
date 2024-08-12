@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import appointment_management.AppointmentManagement;
 import case_management.CaseManagement;
+import common.EndPoints;
 import common.RestUtil;
 import dashboard_page.Dashboard;
 import dto.EditPatientRequest;
@@ -93,7 +94,7 @@ public class EditPatientController {
 	
 	public void saveButtonClicked() throws IOException, InterruptedException {
 		EditPatientRequest editPatientRequest=new EditPatientRequest();
-		String url="http://localhost:8082/patient/edit";
+		String url=EndPoints.EDIT_PATIENT;
 		
 		editPatientRequest.setPatientId(pId.getText());
 		editPatientRequest.setPatientNameEng(pNameEng.getText());
