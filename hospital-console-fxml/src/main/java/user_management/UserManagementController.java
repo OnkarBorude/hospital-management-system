@@ -1,11 +1,14 @@
 package user_management;
 
-import add_user.AddUser;
 import appointment_management.AppointmentManagement;
 import case_management.CaseManagement;
 import dashboard_page.Dashboard;
 import login_screen.LoginScreen;
 import patient_management.PatientManagement;
+import user_add.AddUser;
+import user_delete.DeleteUser;
+import user_edit.EditUser;
+import user_search.SearchUser;
 
 public class UserManagementController {
 	
@@ -38,15 +41,15 @@ public class UserManagementController {
 	}
 	
 	public void deleteButtonClicked() {
-		
+		new DeleteUser().show();
 	}
 	
 	public void searchButtonClicked() {
-		
+		new SearchUser().show();
 	}
 	
 	public void editButtonClicked() {
-		
+		new EditUser().show();
 	}
 
 }

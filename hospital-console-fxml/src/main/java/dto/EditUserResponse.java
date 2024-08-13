@@ -1,15 +1,11 @@
-package patient.dto;
+package dto;
 
-import org.springframework.stereotype.Component;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-
-@JsonInclude(JsonInclude.Include.NON_NULL)
-@Component
-public class DeletePatientResponse {
+public class EditUserResponse {
 	
 	private String responseCode;
 	private String messege;
+	private EditUserRequest editUserRequest;
 	public String getResponseCode() {
 		return responseCode;
 	}
@@ -21,6 +17,12 @@ public class DeletePatientResponse {
 	}
 	public void setMessege(String messege) {
 		this.messege = messege;
+	}
+	public EditUserRequest getEditUserRequest() {
+		return editUserRequest;
+	}
+	public void setEditUserRequest(EditUserRequest editUserRequest) {
+		this.editUserRequest = editUserRequest;
 	}
 	
 

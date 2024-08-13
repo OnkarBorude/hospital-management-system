@@ -2,6 +2,9 @@ package patient.dto;
 
 import org.springframework.stereotype.Component;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 @Component
 public class SearchPatientResponse {
 	

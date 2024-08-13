@@ -1,12 +1,7 @@
-package patient.dto;
+package dto;
 
-import org.springframework.stereotype.Component;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-
-@JsonInclude(JsonInclude.Include.NON_NULL)
-@Component
-public class DeletePatientResponse {
+public class DeleteUserResponse {
 	
 	private String responseCode;
 	private String messege;
@@ -22,6 +17,5 @@ public class DeletePatientResponse {
 	public void setMessege(String messege) {
 		this.messege = messege;
 	}
-	
 
 }

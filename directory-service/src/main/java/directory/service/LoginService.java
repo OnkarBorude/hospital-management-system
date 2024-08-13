@@ -20,7 +20,7 @@ public class LoginService {
 	public LoginResponse userLogin(LoginRequest loginRequest) {
 		
 		LoginResponse loginResponse=new LoginResponse();
-		Optional<Users> users=Optional.ofNullable( usersDao.findByUserName(loginRequest.getUser()));
+		Optional<Users> users=Optional.ofNullable(usersDao.findByUserNameAndPassword(loginRequest.getUser(), loginRequest.getPassword()));
 		
 		if(users.isPresent()) {
 			loginResponse.setUserId(users.get().getUserId());

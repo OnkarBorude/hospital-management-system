@@ -1,6 +1,5 @@
 package appointment_management;
 
-import add_user.AddUser;
 import appointment_add.AddAppointment;
 import appointment_delete.DeleteAppointment;
 import appointment_edit.EditAppointment;
@@ -9,6 +8,7 @@ import case_management.CaseManagement;
 import dashboard_page.Dashboard;
 import login_screen.LoginScreen;
 import patient_management.PatientManagement;
+import user_add.AddUser;
 import user_management.UserManagement;
 
 public class AppointmentManagementController {

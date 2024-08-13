@@ -7,5 +7,7 @@ import directory.entity.Users;
 public interface UsersDao extends JpaRepository<Users, Integer>{
 	
 	public Users findByUserName(String userName);
+	public Users findByUserNameAndPassword(String userName, String password);
+
 
 }

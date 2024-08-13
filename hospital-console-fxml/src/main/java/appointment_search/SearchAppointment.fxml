@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="836.0" prefWidth="1241.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appointment_edit.EditAppointmentController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="836.0" prefWidth="1241.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appointment_search.SearchAppointmentController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f3f3f3" height="792.0" layoutX="2.0" layoutY="40.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-arc-height: 55; -fx-arc-width: 55;" width="300.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8a00" height="80.0" stroke="BLACK" strokeType="INSIDE" width="1241.0" />
@@ -25,7 +25,7 @@
          </font>
       </Text>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="748.0" layoutX="308.0" layoutY="84.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-arc-height: 45; -fx-arc-width: 50;" width="930.0" />
-      <Button alignment="TOP_LEFT" layoutX="4.0" layoutY="103.0" mnemonicParsing="false" onAction="#dashboardButtonClicked" prefHeight="42.0" prefWidth="291.0" style="-fx-background-radius: 15; -fx-font-style: sans-serif; -fx-background-color: #f8f8f8;" text="Dashboard">
+      <Button  alignment="TOP_LEFT" layoutX="4.0" layoutY="103.0" mnemonicParsing="false" onAction="#dashboardButtonClicked" prefHeight="42.0" prefWidth="291.0" style="-fx-background-radius: 15; -fx-font-style: sans-serif; -fx-background-color: #f8f8f8;" text="Dashboard">
          <font>
             <Font name="SansSerif Regular" size="20.0" />
          </font>
@@ -58,7 +58,7 @@
             <Font size="20.0" />
          </font>
       </Button>
-      <Text fill="WHITE" layoutX="325.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Appoinment">
+      <Text fill="WHITE" layoutX="325.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Appoinment">
          <font>
             <Font name="Arial" size="28.0" />
          </font>
@@ -133,12 +133,7 @@
             <Font size="18.0" />
          </font>
       </TextField>
-      <Button layoutX="621.0" layoutY="662.0" mnemonicParsing="false" onAction="#cancleButtonClicked" prefHeight="50.0" prefWidth="182.0" style="-fx-background-radius: 15; -fx-border-color: red; -fx-border-radius: 15; -fx-background-color: white;" text="Cancle" textFill="#f50000">
-         <font>
-            <Font size="21.0" />
-         </font>
-      </Button>
-      <Button layoutX="904.0" layoutY="662.0" mnemonicParsing="false" onAction="#saveButtonClicked" prefHeight="50.0" prefWidth="182.0" style="-fx-background-radius: 15; -fx-border-color: red; -fx-border-radius: 15; -fx-background-color: #6aa84f;" text="Save" textFill="WHITE">
+      <Button layoutX="781.0" layoutY="651.0" mnemonicParsing="false" onAction="#cancleButtonClicked" prefHeight="50.0" prefWidth="182.0" style="-fx-background-radius: 15; -fx-border-color: red; -fx-border-radius: 15; -fx-background-color: white;" text="Cancle" textFill="#f50000">
          <font>
             <Font size="21.0" />
          </font>

@@ -1,4 +1,4 @@
-package appointment_search;
+package user_search;
 
 import java.io.IOException;
 
@@ -7,7 +7,7 @@ import case_management.CaseManagement;
 import common.EndPoints;
 import common.RestUtil;
 import dashboard_page.Dashboard;
-import dto.SearchAppointmentResponse;
+import dto.SearchUserResponse;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -16,29 +16,24 @@ import login_screen.LoginScreen;
 import patient_management.PatientManagement;
 import user_management.UserManagement;
 
-public class SearchAppointmentController {
-	
-
+public class SearchUserController {
 	@FXML
-	TextField aId;
+	TextField uNameEng;
 	
 	@FXML
-	TextField pId;
+	TextField email;
 	
 	@FXML
-	TextField pNameEng;
+	TextField mNum;
 	
 	@FXML
-	TextField aId2;
+	TextField role;
 	
 	@FXML
-	TextField pId2;
+	TextField password;
 	
 	@FXML
-	TextField ExamDate;
-	
-	@FXML
-	TextField aptTime;
+	TextField uId;
 	
 	@FXML
 	Label responseMsg;
@@ -68,27 +63,24 @@ public class SearchAppointmentController {
 	}
 	
 	public void searchButtonClicked() throws IOException, InterruptedException {
-		String url=EndPoints.SEARCH_APPOINTMENT+aId.getText();
-		SearchAppointmentResponse searchAppointmentResponse=RestUtil.getRequest(url, SearchAppointmentResponse.class);
-		if(searchAppointmentResponse.getResponseCode().equals("0000")) {
-			
-			pId.setText(searchAppointmentResponse.getPatientId());
-			pNameEng.setText(searchAppointmentResponse.getPatientNameEng());
-			aId2.setText(searchAppointmentResponse.getAppointmentId());
-			pId2.setText(searchAppointmentResponse.getPatientId());
-			ExamDate.setText(searchAppointmentResponse.getExaminationDate());
-			aptTime.setText(searchAppointmentResponse.getAppointmentTime());
-			responseMsg.setText("Appointment Found");
+		String url=EndPoints.SEARCH_DIRECTORY+uId.getText();
+		SearchUserResponse searchUserResponse=RestUtil.getRequest(url, SearchUserResponse.class);
+		if(searchUserResponse.getResponseCode().equals("0000")) {
+			uNameEng.setText(searchUserResponse.getUserName());
+			email.setText(searchUserResponse.getEmail());
+			mNum.setText(searchUserResponse.getMobileNumber());
+			role.setText(searchUserResponse.getRole());
+			password.setText(searchUserResponse.getPassword());
+			responseMsg.setText("User Found");
 			responseMsg.setTextFill(Color.GREEN);
 		}
 		else {
-			responseMsg.setText("Appointment Not Found");
+			responseMsg.setText("User Not Found");
 			responseMsg.setTextFill(Color.RED);
 		}
-		
 	}
-	
 	public void cancleButtonClicked() {
-		new AppointmentManagement().show();
+		new UserManagement().show();
 	}
+
 }
