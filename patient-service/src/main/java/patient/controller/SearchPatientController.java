@@ -16,9 +16,9 @@ public class SearchPatientController {
 	@Autowired
 	SearchPatientService searchPatientService;
 	
-	@GetMapping("/search/{patientId}")
-	public SearchPatientResponse getPatient(@PathVariable Integer patientId) {
-		return searchPatientService.getPatient(patientId);
+	@GetMapping("/search/{patientId}/{patientName}")
+	public SearchPatientResponse getPatient(@PathVariable Integer patientId, @PathVariable String patientName) {
+		return searchPatientService.getPatient(patientId,patientName);
 	}
 
 }

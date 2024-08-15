@@ -16,9 +16,9 @@ public class SearchAppointmentController {
 	@Autowired
 	SearchAppointmentService searchAppointmentService;
 	
-	@GetMapping(path="/search/{appointmentId}")
-	public SearchAppointmentResponse searchAppointment(@PathVariable Integer appointmentId) {
-		return searchAppointmentService.searchAppointment(appointmentId);
+	@GetMapping(path="/search/{appointmentId}/{patientId}")
+	public SearchAppointmentResponse searchAppointment(@PathVariable Integer appointmentId, @PathVariable Integer patientId) {
+		return searchAppointmentService.searchAppointment(appointmentId, patientId);
 	}
 
 }

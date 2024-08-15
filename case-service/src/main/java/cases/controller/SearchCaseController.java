@@ -18,8 +18,8 @@ public class SearchCaseController {
 	@Autowired
 	SearchCaseService searchCaseService;
 	
-	@GetMapping("/search/{caseId}")
-	public SearchCaseResponse searchCase(@PathVariable Integer caseId) {
-		return searchCaseService.searchCase(caseId);
+	@GetMapping("/search/{caseId}/{patientId}")
+	public SearchCaseResponse searchCase(@PathVariable Integer caseId, @PathVariable Integer patientId) {
+		return searchCaseService.searchCase(caseId, patientId);
 	}
 }

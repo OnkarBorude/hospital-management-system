@@ -15,11 +15,11 @@ public class SearchCaseService {
 	@Autowired
 	CasesDao casesDao;
 	
-	public SearchCaseResponse searchCase(Integer caseId) {
+	public SearchCaseResponse searchCase(Integer caseId, Integer patientId) {
 		
 		SearchCaseResponse searchCaseResponse=new SearchCaseResponse();
-		Optional<Cases> cases=casesDao.findById(caseId);
-		
+	//	Optional<Cases> cases=casesDao.findById(caseId);
+		Optional<Cases> cases=casesDao.findByCaseIdAndPatientId(caseId, patientId);
 		if(cases.isPresent()) {
 			searchCaseResponse.setCaseId(caseId);
 			searchCaseResponse.setPatientNameEng(cases.get().getPatientNameEng());

@@ -15,9 +15,10 @@ public class SearchPatientService {
 	@Autowired
 	PatientsDao patientsDao;
 	
-	public SearchPatientResponse getPatient(Integer patientId) {
+	public SearchPatientResponse getPatient(Integer patientId, String patientName) {
 		SearchPatientResponse searchPatientResponse=new SearchPatientResponse();
-		Optional<Patients> patients=patientsDao.findById(patientId);
+	//	Optional<Patients> patients=patientsDao.findById(patientId);
+		Optional<Patients> patients=patientsDao.findByPatientIdAndPatientNameEng(patientId, patientName);
 		if(patients.isPresent()) {
 			searchPatientResponse.setResponseCode("0000");
 			searchPatientResponse.setMessege("Patient Found successfully");

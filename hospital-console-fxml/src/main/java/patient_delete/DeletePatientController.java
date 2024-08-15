@@ -72,8 +72,7 @@ public class DeletePatientController {
 	}
 	
 	public void searchButtonClicked() throws IOException, InterruptedException {
-		String url=EndPoints.SEARCH_PATIENT+pId.getText();
-		SearchPatientResponse searchPatientResponse=RestUtil.getRequest(url, SearchPatientResponse.class);
+		String url=EndPoints.SEARCH_PATIENT+pId.getText()+"/"+pNameEng.getText();		SearchPatientResponse searchPatientResponse=RestUtil.getRequest(url, SearchPatientResponse.class);
 		if(searchPatientResponse.getResponseCode().equals("0000")) {
 			pNameMar.setText(searchPatientResponse.getPatientNameMar());
 			mNum.setText(searchPatientResponse.getMobileNumber());

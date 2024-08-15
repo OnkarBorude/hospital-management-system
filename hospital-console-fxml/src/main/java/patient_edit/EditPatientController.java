@@ -73,7 +73,7 @@ public class EditPatientController {
 	}
 	
 	public void searchButtonClicked() throws IOException, InterruptedException {
-		String url="http://localhost:8082/patient/search/"+pId.getText();
+		String url="http://localhost:8082/patient/search/"+pId.getText()+"/"+pNameEng.getText();
 		SearchPatientResponse searchPatientResponse=RestUtil.getRequest(url, SearchPatientResponse.class);
 		if(searchPatientResponse.getResponseCode().equals("0000")) {
 			pNameEng.setText(searchPatientResponse.getPatientNameEng());

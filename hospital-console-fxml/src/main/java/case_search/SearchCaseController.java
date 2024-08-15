@@ -71,7 +71,7 @@ public class SearchCaseController {
 	}
 	
 	public void searchButtonClicked() throws IOException, InterruptedException {
-		String url=EndPoints.SEARCH_CASE+cId.getText();
+		String url=EndPoints.SEARCH_CASE+cId.getText()+"/"+pId.getText();
 		SearchCaseResponse searchCaseResponse=RestUtil.getRequest(url, SearchCaseResponse.class);
 		if(searchCaseResponse.getResponseCode().equals("0000")) {
 			responseMsg.setText("Case Found");

@@ -68,7 +68,7 @@ public class DeleteAppointmentController {
 	}
 	
 	public void searchButtonClicked() throws IOException, InterruptedException {
-		String url=EndPoints.SEARCH_APPOINTMENT+aId.getText();
+		String url=EndPoints.SEARCH_APPOINTMENT+aId.getText()+"/"+pId.getText();
 		SearchAppointmentResponse searchAppointmentResponse=RestUtil.getRequest(url, SearchAppointmentResponse.class);
 		if(searchAppointmentResponse.getResponseCode().equals("0000")) {
 			

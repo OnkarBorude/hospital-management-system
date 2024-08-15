@@ -16,11 +16,12 @@ public class SearchAppointmentService {
 	@Autowired
 	AppointmentDao appointmentDao;
 	
-	public SearchAppointmentResponse searchAppointment(Integer appointmentId) {
+	public SearchAppointmentResponse searchAppointment(Integer appointmentId, Integer patientId) {
 		
 		SearchAppointmentResponse searchAppointmentResponse=new SearchAppointmentResponse();
 		
-		Optional<Appointments> appointment=appointmentDao.findById(appointmentId);
+	//	Optional<Appointments> appointment=appointmentDao.findById(appointmentId);
+		Optional<Appointments> appointment=appointmentDao.findByAppointmentIdAndPatientId(appointmentId, patientId);
 		if(appointment.isPresent()) {
 			searchAppointmentResponse.setAppointmentId(appointmentId);
 			searchAppointmentResponse.setPatientId(appointment.get().getPatientId());
